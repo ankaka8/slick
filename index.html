@@ -5,41 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <!-- slick cdn css min ver  반드시 style css 위에 입력-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="css/reset.css">/ -->
 
-        <title>slick slick</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 하나폰트 -->
+    <link rel="stylesheet" href="css/font2/stylesheet.css">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../hanacard/image/pavicon3.png" type="image/x-icon">
+
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+
+
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="main">
-            <div class="your-class">
-                <div calss="s1">
-                    <video autoplay muted controls source
-                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86720/86720_210819_1200_128_960_540.mp4"
-                        deletecommandtype="video/mp4"></video> </div>
-                <div class="s2"><video autoplay muted controls source
-                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86720/86720_211023_1200_128_960_540.mp4"
-                        deletecommandtype="video/mp4"></video> </div>
-                <div class="s3"><video autoplay muted controls source
-                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86720/86720_210669_1200_128_960_540.mp4"
-                        deletecommandtype="video/mp4"> </div>
+
+
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <div class="header claerfix">
+                    <ul class="list1">
+                        <li class="green"><a href="#">개인</a></li>
+                        <li><a href="#">기업</a></li>
+                        <li><a href="#">가맹점</a></li>
+                    </ul>
+
+                    <ul class="list2">
+                        <li class="logo"><a href="#">로그인</a></li>
+                        <li><a href="#">상품공시실</a></li>
+                        <li><a href="#">금융소비보호</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+
+                </div>
             </div>
         </div>
+        <!-- end header -->
+
+
+        <div id="banner">
+            <div class="container"></div>
+            <div class="ban-left">나중에만들기</div>
+            <!-- ban left  -->
+            <div class="ban-right">
+                <div class="br-tit">
+                    <h3>VIVA G Platuinum <br>체크카드</h3>
+                        <p>홈페이지에서 카드를 최초로 발급하시면 <br><strong>연회비 100% 캐쉬백 </strong></p>
+                    
+                </div>
+                <!-- ban tit end -->
+            </div>
+            <!-- ban right -->
+
+        </div>
+        <!-- end banner -->
+
+
     </div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!-- jquery는 반드시 닫는 bpdy위에 입력 (버전1 ) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <!-- min js 는 slick에 맨 위에 배포된 것 copy해서 jquery아랫단에 반드시 입력 -->
-    <script>
-        $(document).ready(function () {
-            $('.your-class').slick({autopay:true,dots:true,fade:true,});
-        });
-        // slick에서 설정코드 잡고 setting 외 기타옵션 날리기
-    </script>
+
 </body>
 
 </html>

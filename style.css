@@ -1,93 +1,167 @@
 @charset "UFT-8";
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+
+/* layout */
+#wrap {}
+
+#header {
+    background-color: whitesmoke;
+
 }
 
-li {
-    list-style: none;
+/* layout end */
+
+#banner {
+    background-color: #a0d1ee;
+    height: 470px;
+    
 }
 
-.wrap {
-    width: 800px;
-    margin: 100px auto 0;
+/* container */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.wrap .main{}
-
-.wrap .main .your-class {
-    height: 420px;
+.claerfix::after {
+    content: "";
+    clear: both;
+    display: block
 }
 
-.wrap .main .your-class .slick-slide {
-    height: 420px;
+/* container end */
+
+
+
+/* header */
+.header {
+    font-family: 'Hana B';
 }
 
-.wrap .main .your-class .slick-slide video {
-    width: 100%;
+.header li {
+    margin: 7px 0;
+    background: url(../image/bar1.gif) no-repeat 0px 8px ;
 }
 
-.wrap .main .your-class .slick-arrow {
+.header li a {
+    font-size: 13px;
+    display: block;
+    padding: 8px 15px;
+}
+
+.header .list1 {
+    float: left;
+}
+
+.header .list1 li {
+    float: left;
+}
+
+.header .list1 li:nth-child(2){
+    background: none;
+}
+.header .list1 li.green {}
+
+.header .list1 li.green a {
+    background-color: #00907f;
+    color: white;
+    border-radius: 3px;
+    /* 하나카드 개인색넣는법 */
+}
+
+.header .list2 {
+    float: right;
+}
+
+.header .list2 li {
+    float: left;
+}
+
+/* 로그인/상품공시실 단 셋팅 */
+.header .list2 li a {
+    color: #797979;
+}
+
+.header .list2 li.logo {
+    margin: 11px 13px 11px 0;
+}
+
+.header .list2 li.logo a {
+    border: 1px solid #ccc;
+    /* border :border width/bordersytle/bordercolor */
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+/* /헤더끝 */
+
+
+/* /banner */
+.ban-left{
+
+}
+
+
+.ban-right{
+    width: 600px;
     position: absolute;
-    top: calc(50% - 10px);
-
-}
-
-.wrap .main .your-class .slick-prev {
-    z-index: 5;
-    left: 5%;
-
-}
-
-.wrap .main .your-class .slick-prev::after {
-    content: "\f100";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    visibility: visible;
-    font-size: 30px;
-    color: rgb(7, 7, 7);
-
-    /* 퐅트의 기본값은 16px 크롬에선느 최소 폰트크기가 10이기때문에 10이하는적용안됨 */
-
+    right: 0; top: 50px;
+    
 }
 
 
-.wrap .main .your-class .slick-next {
-  
-    right: 5%;
-   
+.ban-right .br-tit{
+    background-color: #fff;
+    padding: 45px 0 60px 100px;
 }
 
-.wrap .main .your-class .slick-next::after {
-    content: "\f101";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    visibility: visible;
-    font-size: 30px;
-    color: rgb(17, 17, 17);
- }
+
+.ban-right .br-tit h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+
+}
+.ban-right .br-tit p{
+    position: relative;
+    font-size: 14px;
+    padding-top: 50px;
+}
+.ban-right .br-tit p::before{
+    content: "";
+    position: absolute;
+    top: 24px; left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #00907f;
+}
+.ban-right .br-tit p strong{
+    color: #00907f;
+  }
 
 
-.wrap .main .your-class .slick-dots{
-    text-align: center;
-}
-.wrap .main .your-class .slick-dots li{
-    display: inline-block;
-    margin-top: 20px;
-    margin: 20px 5px 0;
-}
-.wrap .main .your-class .slick-dots li button{
-    border: none;
-    font-size: 0;
-    width: 15px; height: 15px;
-    border-radius: 50%;
-    background-color: black;
-    transition: 0.3s;
-}
 
-.wrap .main .your-class .slick-dots li.slick-active button{
-    background-color: rgb(86, 88, 88);
-    width: 20px;
-    border-radius: 8px;
+
+
+
+
+
+/* 폰트굵기초기화 */
+strong{font-weight: normal;}
+
+/* 제목스타일 초기화 */
+h1,h2,h3,h4,h5,h6{
+    font-size: 12px;
+    font-weight: normal;
 }
+/* 
+
+h2{}
+h3{font-size: 30px;
+    font-family: 'Hana B';
+}
+font-family: 'Noto Sans KR', sans-serif;/ */
